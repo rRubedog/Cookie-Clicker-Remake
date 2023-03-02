@@ -1,0 +1,63 @@
+html, body {
+    padding: 0px;
+    margin: 0px;
+    font-size: 150%;
+    font-family: "Rubik", sans-serif;
+    text-align: center;
+      height: 1000px;
+      background-color: rgb(100, 100, 100);
+  }
+  
+  button {
+      height: 30px;
+      border-radius: 10px;
+      font-size: 80%;
+      
+  }
+  
+  .title {
+      position: relative;
+      top: 0px;
+      padding: 10px;
+  }
+  
+  .middle {
+      width: 100%;
+      height: 700px;
+      background-image: url("http://pa1.narvii.com/6718/86e6473ccdc4cfefcb427d96def5cf6917d481f4_00.gif");
+      margin-bottom: 200px;
+      box-shadow: inset 0px -30px 40px 40px rgb(100, 100, 100);
+  }
+  
+  .bottom {
+      height:100vh;
+      position: relative;
+      bottom: 0px;
+  }
+  
+  .upgrades-wrapper {
+      position: absolute;
+      bottom: 0px;
+    right: 0px;
+      margin-bottom: 0px;
+      font-size: 50%;
+  /* 	width: 400px;
+      height: 100px; */
+  }
+  
+  #building-upgrade {
+      bottom: 0px;
+      right: 0px;
+    display: grid;
+      grid-template-columns: 1fr 1fr;
+  }
+  
+  .cookies-and-word {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      width: 80%;
+      left:10%;
+      position: relative;
+  }

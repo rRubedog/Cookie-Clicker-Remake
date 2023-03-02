@@ -1,0 +1,23 @@
+.building-upgrade-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 20px;
+  }
+  
+  .building-upgrade-wrapper > button {
+    height: fit-content;
+  }
+  
+  /* Makes buttons look good with their numbers */
+  .grandmas-wrapper, .clickers-wrapper, .farm-wrapper, .mine-wrapper, .factorie-wrapper, .bank-wrapper, .temple-wrapper, .wizard-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  
+  /* Makes Upgrade buttons look better with their numbers */
+  #cursor-upgrade, #grandma-upgrade, #farm-upgrade, #mine-upgrade, #factorie-upgrade, #bank-upgrade, #temple-upgrade, #wizard-upgrade {
+    display: flex;
+    flex-direction: row;
+  }
+  
