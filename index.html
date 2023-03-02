@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+	
+	<head>
+		
+<!-- 		Font Styles -->
+	  <link rel="preconnect" href="https://fonts.googleapis.com">
+	  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+		
+<!-- 		Main Styles -->
+		<link rel="stylesheet" href="styles/common.css">
+
+<!-- 		Game Styles -->
+		<link rel="stylesheet" href="styles/game-styles/cookie-side-styles.css">
+		<link rel="stylesheet" href="styles/game-styles/game-styles.css">
+		
+<!-- 		Buildings styles -->
+		<link rel="stylesheet" href="styles/game-styles/buildings/buildings.css">
+	</head>
+	
+	<body>
+		<div class="top">
+			<div class="title">
+				Cookie Clicker Remake 
+			</div>
+		</div>
+		<div class="middle"></div>
+		<div class="bottom">
+		  <div class="game-wrapper">
+		    <div class="cookie-side-wrapper" id="cookie-side-wrapper">
+					
+					<div class="over-the-cookie-stats">
+						<div class="cookies-and-word">
+			      	<div id="cookies"></div>
+							<div id="cookies-word"></div>
+						</div>
+						<div class="cookies-per-second-and-word">
+							<div id="cookies-per-second-word-display"></div>
+							<div id="cookies-per-second-counter"></div>
+						</div>
+					</div>
+					
+		      <button id="cookie-increment" onclick="cookiesIncrease()"><img style="width: 200px; height: 200px;" src="https://i.imgflip.com/58f14u.png"></button>
+		    </div>
+		
+		    <div class="building-upgrade-wrapper" id="building-upgrade-wrapper">
+		
+		      <!--       clickers -->
+		      <div class="clickers-wrapper" id="clickers-wrapper">
+		        <div id="clicker-cost"></div>
+		        <button onclick="clickerIncrease();">Buy AutoClicker</button>
+		      </div>
+		
+		      <!--       grandmas -->
+		      <div class="grandmas-wrapper" id="grandmas-wrapper">
+		        <div id="grandma-cost"></div>
+		        <button onclick="gmaIncrease();">Hire Grandma</button>
+		      </div>
+	
+	<!-- 				farms -->
+					<div class="farm-wrapper" id="farm-wrapper">
+		        <div id="farm-price"></div>
+		        <button onclick="farmIncrease();">Buy Farm</button>
+		      </div>
+	
+	<!-- 				mines -->
+					<div class="mine-wrapper" id="mine-wrapper">
+		        <div id="mine-price"></div>
+		        <button onclick="mineIncrease();">Buy Mine</button>
+		      </div>
+	
+	<!-- 				factories -->
+					<div class="factorie-wrapper" id="factorie-wrapper">
+		        <div id="factorie-price"></div>
+		        <button onclick="factorieIncrease();">Buy Factorie</button>
+		      </div>
+	
+	<!-- 				banks -->
+					<div class="bank-wrapper" id="bank-wrapper">
+		        <div id="bank-price"></div>
+		        <button onclick="bankIncrease();">Buy Bank</button>
+		      </div>
+	
+	<!-- 				temples -->
+					<div class="temple-wrapper" id="temple-wrapper">
+		        <div id="temple-price"></div>
+		        <button onclick="templeIncrease();">Buy Temple</button>
+		      </div>
+					
+<!-- 					wizard towers -->
+					<div class="wizard-wrapper" id="wizard-wrapper">
+		        <div id="wizard-price"></div>
+		        <button onclick="wizardIncrease();">Buy Wizard Tower</button>
+		      </div>
+
+		    </div>
+		  </div>
+			
+			<div class="upgrades-wrapper">
+	<!--       upgrades -->
+				<div id="building-upgrade">
+					
+	<!--         cursor upgrade -->
+					<div id="cursor-upgrade">
+						<div id="cursor-upgrade-price"></div>
+						<button id="curosr-upgrade-button" onclick="cursorUpgrade()"></button>
+					</div>
+					
+	<!--         grandma upgrade -->
+					<div id="grandma-upgrade">
+						<div id="grandma-upgrade-price"></div>
+						<button id="grandma-upgrade-button" onclick="grandmaUpgrade()"></button>
+					</div>
+
+<!-- 					farm upgrade -->
+					<div id="farm-upgrade">
+						<div id="farm-upgrade-price"></div>
+						<button id="farm-upgrade-button" onclick="farmUpgrade()"></button>
+					</div>
+					
+<!-- 					mine upgrade -->
+					<div id="mine-upgrade">
+						<div id="mine-upgrade-price"></div>
+						<button id="mine-upgrade-button" onclick="mineUpgrade()"></button>
+					</div>
+
+<!-- 					factorie upgrade -->
+					<div id="factorie-upgrade">
+						<div id="factorie-upgrade-price"></div>
+						<button id="factorie-upgrade-button" onclick="factorieUpgrade()"></button>
+					</div>
+
+<!-- 					bank upgrade -->
+					<div id="bank-upgrade">
+						<div id="bank-upgrade-price"></div>
+						<button id="bank-upgrade-button" onclick="bankUpgrade()"></button>
+					</div>
+
+<!-- 					temple upgrade -->
+					<div id="temple-upgrade">
+						<div id="temple-upgrade-price"></div>
+						<button id="temple-upgrade-button" onclick="templeUpgrade()"></button>
+					</div>
+					
+<!-- 							wizard tower upgrade -->
+					<div id="wizard-upgrade">
+						<div id="wizard-upgrade-price"></div>
+						<button id="wizard-upgrade-button" onclick="wizardUpgrade()"></button>
+					</div>
+	
+				</div>
+			</div>
+		</div>
+
+<!-- 		Essential code -->
+		<script src="script/timing.js"></script>
+		<script src="script/script.js"></script>
+		
+<!-- 		Buildings code -->
+		<script src="script/buildings/grandma.js"></script>
+		<script src="script/buildings/clicker.js"></script>
+		<script src="script/buildings/farm.js"></script>
+		<script src="script/buildings/mine.js"></script>
+		<script src="script/buildings/factory.js"></script>
+		<script src="script/buildings/bank.js"></script>
+		<script src="script/buildings/temple.js"></script>
+		<script src="script/buildings/wizard-tower.js"></script>
+	</body>
+</html>
